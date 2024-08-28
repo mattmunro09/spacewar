@@ -38,7 +38,7 @@
 #define GOOD_SPEED 62.0
 
 /* The status of each Artificial Intelligence */
-int ai_status[2];
+extern int ai_status[2];
 
 void initialize_ai(void);
 void ai_play(int);

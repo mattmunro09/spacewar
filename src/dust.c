@@ -18,6 +18,8 @@
 */
 #include "dust.h"
 
+list_of_dust_t list_of_dust;
+
 void initialize_dust(void){
   list_of_dust = NULL;
 }

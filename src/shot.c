@@ -18,6 +18,9 @@
 */
 #include "shot.h"
 
+shot_t *list_of_shot;
+
+
 void initialize_shot(void){
   list_of_shot = NULL;
 }

@@ -30,13 +30,13 @@
 // How many microseconds a dust particle exists in the screen
 #define DUST_LIFE 1000000
 
-struct dust{
+typedef struct dust{
   polygon *body;
   float dx, dy;
   unsigned color;
   struct timeval time;
   struct dust *next, *previous;
-} *list_of_dust;
+} *list_of_dust_t;
 
 void initialize_dust(void);
 void destroy_dust(void);

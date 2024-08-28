@@ -31,15 +31,15 @@
 
 
 
-png_structp _png_ptr;
-png_infop _info_ptr;
-long _width, _height;
-int _bit_depth, _color_type;
+extern png_structp _png_ptr;
+extern png_infop _info_ptr;
+extern long _width, _height;
+extern int _bit_depth, _color_type;
 
-unsigned long _image_width, _image_height, _image_rowbytes;
-int _image_channels;
+extern unsigned long _image_width, _image_height, _image_rowbytes;
+extern int _image_channels;
 
-unsigned char *_image_data;
+extern unsigned char *_image_data;
 
 
 struct surface *new_image(char *);

@@ -40,7 +40,7 @@
 #define HYPERSPACE_TIME 1000000lu
 #define HYPERSPACE_FUEL 165.0
 
-struct {
+typedef struct _ship {
   polygon **body; // Ship's polygons
   unsigned color;
   float x, y;     // Position of the gravity center
@@ -50,12 +50,14 @@ struct {
   float fuel;
   polygon *front;
   polygon *propulsor[PROPULSORS];
-} ship[NUMBER_OF_SHIPS];
+} ship_t;
 
-struct {
+extern ship_t ship[NUMBER_OF_SHIPS];
+
+typedef struct _tank{
   surface *full;
   surface *empty;
-} tank;
+} tank_t;
 
 void initialize_ships(int);
 void film_ships();

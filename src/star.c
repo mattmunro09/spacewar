@@ -18,6 +18,8 @@
 */
 #include "star.h"
 
+star_t star;
+
 // Mallocs all the data needed by the star and also draw the first
 // star image in the screen
 void initialize_star(void){

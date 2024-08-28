@@ -36,16 +36,16 @@
 // The shot speed:
 #define SHOT_SPEED 150.0
 
-struct shot{
+typedef struct shot{
   circle *body;
   float dx, dy;
   struct timeval time;
   struct shot *next, *previous;
   unsigned color;
   int owner;
-};
+} shot_t;
 
-struct shot *list_of_shot;
+extern shot_t *list_of_shot;
 
 void initialize_shot(void);
 void destroy_shot(void);

@@ -43,12 +43,12 @@ int gravity_to_ship(int);
 int gravity_to_dust(struct dust *);
 int gravity_to_shot(struct shot *);
 
-struct{
+typedef struct _star{
   surface *img[5];
   int state;
   float size;
   struct timeval time;
-} star;
+} star_t;
 
 
 #endif

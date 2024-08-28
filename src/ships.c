@@ -18,6 +18,9 @@
 */
 #include "ships.h"
 
+ship_t ship[NUMBER_OF_SHIPS];
+tank_t tank;
+
 // Initializes the number of ships passed as argument.
 void initialize_ships(int number){
   tank.empty = new_image("empty_tank.png");

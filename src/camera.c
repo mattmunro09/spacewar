@@ -18,6 +18,9 @@
 */
 #include "camera.h"
 
+camera *cam[9];
+
+
 void initialize_cameras(void){
   int i;
   for(i = 0; i < 9; i ++){

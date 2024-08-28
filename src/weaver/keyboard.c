@@ -23,6 +23,9 @@
 #include "display.h"
 #include "keyboard.h"
 
+int keyboard[KEYS];
+mouse_t mouse;
+
 // This function initializes and cleans our keyboard buffer
 void _initialize_keyboard(void){
   int i;
@@ -97,3 +100,5 @@ void get_input(void){
     }
   }
 }
+
+

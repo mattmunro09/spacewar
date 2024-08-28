@@ -370,3 +370,13 @@ int _rpng_x_msb(unsigned long u32val){
     }
     return i;
 }
+
+png_structp _png_ptr;
+png_infop _info_ptr;
+long _width, _height;
+int _bit_depth, _color_type;
+
+unsigned long _image_width, _image_height, _image_rowbytes;
+int _image_channels;
+
+unsigned char *_image_data;

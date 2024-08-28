@@ -320,3 +320,15 @@ void fill_ellipse(unsigned x, unsigned y, unsigned width, unsigned height, unsig
   XFillArc(_dpy, _b, _gc, x - width / 2, y - height / 2, width, height, 0, 23040);
   XFlush(_dpy);
 }
+
+Display *_dpy;
+Window _w;
+XdbeBackBuffer _b;
+int window_width, window_height;
+GC _gc, _mask_gc;
+int _screen, _depth;
+Visual *_visual;
+struct surface *window;
+struct surface *background;
+unsigned long transparent_color;
+

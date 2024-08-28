@@ -96,8 +96,7 @@ int collision_rectangle_circle(struct vector4 *, struct vector3 *);
 int collision_rectangle_rectangle(struct vector4 *, struct vector4 *);
 int collision_rectangle_polygon(struct vector4 *, struct vector2 *);
 
-struct timeval _b_frame, current_time;
-int fps;
+extern int fps;
 
 typedef struct vector2 polygon;
 typedef struct vector3 circle;

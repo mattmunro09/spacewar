@@ -18,6 +18,8 @@
 */
 #include "ai.h"
 
+int ai_status[2];
+
 /* This function sets each AI status as "START" */
 void initialize_ai(void){
   ai_status[0] = ai_status[1] = START;

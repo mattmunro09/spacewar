@@ -1,4 +1,4 @@
-CC=gcc -Wall -O2 -g $$(freetype-config --cflags)
+CC=gcc -Wall -O2 -g -I/usr/include/freetype2 
 W_DIR=src/weaver/ 
 PROG=spacewar
 WEAVER_OBJ=display.o keyboard.o vector2.o vector3.o vector4.o weaver.o sound.o image.o font.o
@@ -9,7 +9,7 @@ DATA_DIR=/usr/share/games/spacewar
 
 #######################################################
 all: ${WEAVER_OBJ} ${PROG_OBJ}
-	${CC} ${CFLAGS} -g -o ${PROG} ${WEAVER_OBJ} ${PROG_OBJ} -lX11 -lXext -lm -lvorbisfile -lasound -lpng -lfreetype $$(freetype-config --cflags)
+	${CC} ${CFLAGS} -g -o ${PROG} ${WEAVER_OBJ} ${PROG_OBJ} -lX11 -lXext -lm -lvorbisfile -lasound -lpng -lfreetype 
 #GAME_START
 game.o: src/game.c ${PROG_HEAD}
 	${CC} -c src/game.c

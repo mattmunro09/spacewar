@@ -27,7 +27,7 @@
 #include "game.h"
 #include "weaver/weaver.h"
 
-camera *cam[9];
+extern camera *cam[9];
 
 void initialize_cameras(void);
 void destroy_cameras(void);
